@@ -44,16 +44,16 @@ Setup:
 2. Install the dependency.
    python -m pip install -r requirements.txt
 3. Configure MySQL credentials in the Python program.
-   The current source connects to a local MySQL server and includes a hard-coded password. Before publishing the repository, remove the hard-coded credential and read the database settings from environment variables or a local configuration file that is excluded from Git. Never commit a real database password.
+   The current source connects to a local MySQL server and includes a hard-coded password.
 4. Run the program.
    python main.py
    The program is written to create the scholartrack_db database and its tables when it starts, provided the MySQL connection succeeds and the account has the required permissions.
 
 Database tables:-
 The program creates these tables:
-  Table	                    Purpose
-users	            Login username, password, and role
-profiles	        Applicant contact, education, skills, and achievements
+Table	                    Purpose
+users	             Login username, password, and role
+profiles	          Applicant contact, education, skills, and achievements
 scholarships	    Scholarship details, funding, deadline, and academic requirements
 applications	    Applicant-to-scholarship records and application status
 
